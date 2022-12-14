@@ -17,13 +17,25 @@
 
     {{!-- Article Body - partials/article/article-body.hbs --}}
     {{> "article/article-body"}}
+
+
+    {{!-- Appzi feedback --}}
+    <button  class="btn btn-primary"
+      onclick="appzi && appzi.openWidget('baeb53fd-3f24-46ca-aec2-c6580138f773')"
+    >
+      Give us some feedback
+    </button>
+
 </article>
+
+{{!-- Post Commets - partials/article/article-comments.hbd --}}
+{{> "article/article-comments"}}
 
 {{/post}}
 
 
 {{!-- Post Commets - partials/article/article-comments.hbd --}}
-{{#post}}{{> "article/article-comments"}}{{/post}}
+{{!-- {{#post}}{{> "article/article-comments"}}{{/post}} --}}
 
 {{!-- 6 Related Articles - partials/article/article-related.hbs --}}
 {{> "article/article-related"}}
